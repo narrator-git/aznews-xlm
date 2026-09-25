@@ -1,0 +1,1 @@
+LABELS = ["sports", "politics", "economy", "culture", "world"]
