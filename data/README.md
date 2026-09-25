@@ -1,11 +1,24 @@
 # Data
 
-Explanation of data will be here..
+No data collected yet
 
 ## Task
+Classify each Azerbaijani news article as one of:
+```
+{sports, politics, economy, culture, world}
+```
 
-Azerbaijani news topic classification in 5 dimensions
+## Planned sources
+- https://apa.az
+- https://report.az
+- https://oxu.az
 
-## Sources
+## What one row looks like
+- url
+- title
+- text
+- date
+- source (which site)
+- label (one of the five topics)
 
-List of sources will be here..
+Train / validation / test are split by **article**.
