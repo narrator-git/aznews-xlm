@@ -4,9 +4,9 @@ Azerbaijani news topic classifier built on fine-tuned XLM-RoBERTa
 
 ## Status
 
-Working: collector for apa.az (five topics: sports, politics, economy, culture, world)
+Working: collector for apa.az (five topics, three list pages per topic) and a frozen train/val/test split (246/54/54)
 
-To be done: train/test split, TF-IDF, XLM-RoBERTa, GPT-4o-mini
+To be done: TF-IDF, XLM-RoBERTa, GPT-4o-mini
 
 ## Task
 
