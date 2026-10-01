@@ -4,9 +4,9 @@ Azerbaijani news topic classifier built on fine-tuned XLM-RoBERTa
 
 ## Status
 
-Working: collector for apa.az (five topics, three list pages per topic) and a frozen train/val/test split (246/54/54)
+Working: collector, frozen split, TF-IDF baseline (test accuracy 0.944, macro-F1 0.942)
 
-To be done: TF-IDF, XLM-RoBERTa, GPT-4o-mini
+To be done: XLM-RoBERTa, GPT-4o-mini
 
 ## Task
 
@@ -21,12 +21,13 @@ Despite serious AI progress in last years, there is still not enough work done o
 
 ## Comparison
 
-All three systems are evaluated on the same test set:
-- TF-IDF + logistic regression (baseline)
-- XLM-RoBERTa, fine-tuned on this dataset
-- GPT-4o-mini
+All three systems are evaluated on the same test set (54 articles):
 
-Metrics: accuracy, macro-F1, latency, and cost per 1k articles.
+| System | accuracy | macro-F1 | latency | cost / 1k docs |
+|---|---|---|---|---|
+| TF-IDF + logistic regression | 0.944 | 0.942 | TBD | 0 |
+| XLM-RoBERTa, fine-tuned | TBD | TBD | TBD | 0 |
+| GPT-4o-mini, few-shot via the API | TBD | TBD | TBD | TBD |
 
 ## Setup
 ```bash
