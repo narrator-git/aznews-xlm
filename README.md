@@ -4,9 +4,9 @@ Azerbaijani news topic classifier built on fine-tuned XLM-RoBERTa
 
 ## Status
 
-Working: collector, frozen split, TF-IDF baseline (test accuracy 0.944, macro-F1 0.942)
+Working: collector, frozen split, TF-IDF baseline (test 0.944 / 0.942), fine-tuned XLM-RoBERTa (test 0.889 / 0.885)
 
-To be done: XLM-RoBERTa, GPT-4o-mini
+To be done: GPT-4o-mini
 
 ## Task
 
@@ -26,7 +26,7 @@ All three systems are evaluated on the same test set (54 articles):
 | System | accuracy | macro-F1 | latency | cost / 1k docs |
 |---|---|---|---|---|
 | TF-IDF + logistic regression | 0.944 | 0.942 | TBD | 0 |
-| XLM-RoBERTa, fine-tuned | TBD | TBD | TBD | 0 |
+| XLM-RoBERTa, fine-tuned | 0.889 | 0.885 | TBD | 0 |
 | GPT-4o-mini, few-shot via the API | TBD | TBD | TBD | TBD |
 
 ## Setup
