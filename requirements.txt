@@ -6,3 +6,4 @@ datasets
 httpx
 python-dotenv
 beautifulsoup4
+openai
